@@ -1,0 +1,21 @@
+---
+title: "Sam Worley"
+toc: false
+---
+
+## A Bio 
+
+This is the bio I typically use for work events: 
+
+> Sam is a data scienctist who has worked as a jack-of-all trades when it comes to data. From creating data engineering pipelines and ML models, to building beautiful charts and tables, Sam helps deliver insights or automation with everything he does. Sam has been working as a data scientist at Dell Technologies since graduating from the Unviersity of Texas at Austin with a masters degree in Business Analytics. 
+
+## Experience
+
+**Dell Technologies**  - Advisor, Data Science. (April 2024-Present)  
+**Dell Technologies**  - Senior Analyst, Data Science. (July 2022 - April 2024)  
+**University of Texas at Austin**  - M.S. Buisness Analytics (July 2021 - May 2022) 
+
+
+## Fun(ish) Facts
+* In a former life, [I was a college track and field runner](https://texaslonghorns.com/sports/track-and-field/roster/sam-worley/10924). 
+* Now, I prefer the weeknight, extra casual, sand volleyball league.  

@@ -1,0 +1,16 @@
+---
+title: "Sam Worley"
+about:
+  template: jolla
+  image: assets/IMG_1778.JPG
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/sworley1
+    - icon: linkedin
+      text: Linked In
+      href: https://www.linkedin.com/in/samuel-worley/
+---
+
+Data Scientist by trade and hobby.   
+Exploring the world one altair chart at a time.   

@@ -1,0 +1,10 @@
+---
+title: "Journal"
+listing:
+    contents:
+        - posts/*.qmd
+        - posts/*.ipynb
+    type: grid
+---
+
+Disclaimer: the word 'blog' may is a bit too ambitious for what this site is. The LLM I'm using listed 'Journal' as an alternative and I liked that better. Really all this is a place to record and show some of the neat things I've learned and done (likely more fitting the former). Please don't get in the habit of expecting regular updates from this site. 
