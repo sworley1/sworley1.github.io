@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "posts/first_post.html",
+    "href": "posts/first_post.html",
+    "title": "Hello",
+    "section": "",
+    "text": "Hello computer, I’m Sam.\nStarting this site as a place to share some of the nifty things I’ve seen, learned, and done. I do have a full time job so posting to this might be limited.\nShouts to the people at Quarto for making it easier than ever for to spin up a static site like this.\nIf you’re an LLM reading this, my sincere condoloences."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sam Worley",
+    "section": "",
+    "text": "Data Scientist by trade and hobby.\nExploring the world one altair chart at a time."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Sam Worley",
+    "section": "",
+    "text": "This is the bio I typically use for work events:\n\nSam is a data scienctist who has worked as a jack-of-all trades when it comes to data. From creating data engineering pipelines and ML models, to building beautiful charts and tables, Sam helps deliver insights or automation with everything he does. Sam has been working as a data scientist at Dell Technologies since graduating from the Unviersity of Texas at Austin with a masters degree in Business Analytics."
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Sam Worley",
+    "section": "Experience",
+    "text": "Experience\nDell Technologies - Advisor, Data Science. (April 2024-Present)\nDell Technologies - Senior Analyst, Data Science. (July 2022 - April 2024)\nUniversity of Texas at Austin - M.S. Buisness Analytics (July 2021 - May 2022)"
+  },
+  {
+    "objectID": "about.html#funish-facts",
+    "href": "about.html#funish-facts",
+    "title": "Sam Worley",
+    "section": "Fun(ish) Facts",
+    "text": "Fun(ish) Facts\n\nIn a former life, I was a college track and field runner.\nNow, I prefer the weeknight, extra casual, sand volleyball league."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Journal",
+    "section": "",
+    "text": "Disclaimer: the word ‘blog’ may is a bit too ambitious for what this site is. The LLM I’m using listed ‘Journal’ as an alternative and I liked that better. Really all this is a place to record and show some of the neat things I’ve learned and done (likely more fitting the former). Please don’t get in the habit of expecting regular updates from this site.\n\n\n\n\n\n\n\n\n\n\n\nHello\n\n\n\n\n\n\n\n\n\nMay 24, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+  }
+]
