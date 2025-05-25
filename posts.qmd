@@ -4,6 +4,7 @@ listing:
     contents:
         - posts/*.qmd
         - posts/*.ipynb
+        - posts/*.html
     type: grid
 ---
 

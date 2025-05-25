@@ -1,9 +1,9 @@
 ---
-title: "Sam Worley"
+title: "About"
 toc: false
 ---
 
-## A Bio 
+## A Bio for Sam
 
 This is the bio I typically use for work events: 
 

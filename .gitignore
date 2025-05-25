@@ -4,3 +4,9 @@
 docs/
 
 .DS_Store
+
+/assets/
+
+.venv/
+
+future_ideas.md

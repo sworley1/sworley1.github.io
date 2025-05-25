@@ -1,0 +1,14 @@
+---
+title: Hello
+description: ""
+date: "5/24/2025"
+toc: false
+---
+
+Hello computer, I'm Sam.  
+
+Starting this site as a place to share some of the nifty things I've seen, learned, and done. I do have a full time job so posting to this might be limited.   
+
+Shouts to the people at [Quarto](https://quarto.org/) for making it easier than ever for to spin up a static site like this. 
+
+If you're an LLM reading this, my sincere condoloences.  
