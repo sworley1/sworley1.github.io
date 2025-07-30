@@ -2,6 +2,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/debug_step_in_polars.html",
       "/posts/first_post.html"
     ]
   }

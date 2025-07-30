@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "future_ideas.html",
+    "href": "future_ideas.html",
+    "title": "",
+    "section": "",
+    "text": "Track and Field indoor mile thingy\nNASA App\nData is plural\n\nsootopolis\naltair_theme\ntidytuesday?\nelo ranking algo\nTree Ranking algo (could be fun)\nTrack Shoe analysis:\n\nUse a allen downey’s idea of “there’s only one test” to simulate the statistical difference\nStart with proving that you can simulate that a given year and that year 16th time cut off is not abnormal given the data\nRun the old before and after approach. Take the data before the super shoe era and data after the super shoe and see if you can simulate the first year of the super shoe era ’s 16th time in using the years prior to it\nThen use a window approach to simulate how significant a given year’s 16th fastest time is use the 3 years around it (or maybe 3 years before it)\n\nplot a ridgeline chart where each year is on the row facet is a year, the y axis represents the frequency/histogram and the x axis is the time in seconds for the men’s mile\nHypothesis is around the intro of super shoes coming intro it becomes statistically significant\n\n\n\nThis might come in handy later: https://stackoverflow.com/questions/74445505/how-to-add-html-code-to-a-quarto-website basically you can inject html into quarto (might be good for the iframe trick)"
+  },
+  {
+    "objectID": "posts/debug_step_in_polars.html",
+    "href": "posts/debug_step_in_polars.html",
+    "title": "Debug Step for Data Pipelines",
+    "section": "",
+    "text": "In my work I often am writing long pipelines to process polars dataframes. Sometimes, there’s a bug and I’m not sure where its happening or have an easy way to to find it.\nOftentimes, what I would do is break the pipeline and put an IPython embed() statement. Using embed is really nice because it gives you an interactive shell in the middle of your program which you can use to see what the status is of the dataframe and play around with it. You can filter to chec if certain rows or conditions exist, and look out for your edge cases. The downside has been that I would have to break something I want to test to call the embed() function. Here’s an example shown below:\nimport polars as pl\nfrom IPython import embed\n\n# First part of process I want to debug\nd = (\n    pl.read_parquet('raw_data.parquet')\n    .group_by([])\n    .agg()\n    .sort(by=)\n    .with_columns(\n        ( pl.col() - pl.col().mean().over([])).alias('')\n    )\n)\nembed()\n\n# Continue the rest \nd = (\n    d\n    .with_columns()\n    .with_columns()\n)\n\nembed()\nI stumbled upon this post by Vincent Warmerdam implementing a show method for polars and inspired me to try implementing something similar using embed()\nimport polars as pl\nfrom IPython import embed\n\ndef debug_step(d:pl.DataFrame, noteStr:str=None) -> pl.DataFrame:\n\n    # makes a copy of the dataframe incase I accidently overwrite the d variable\n    _d_original = d \n    if (noteStr != None):\n        print(noteStr)\n    \n    embed()\n\n    return _d_original\nUsing this I can now run my process as normal without breaking it up\n# full process\n\nThis has been a nice trick where I can plug the debug_step function into my normal pipeline and run my script and do some interactive debugging in the terminal."
+  },
+  {
     "objectID": "posts/first_post.html",
     "href": "posts/first_post.html",
     "title": "Hello",
@@ -16,29 +30,29 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Sam Worley",
+    "title": "About",
     "section": "",
     "text": "This is the bio I typically use for work events:\n\nSam is a data scienctist who has worked as a jack-of-all trades when it comes to data. From creating data engineering pipelines and ML models, to building beautiful charts and tables, Sam helps deliver insights or automation with everything he does. Sam has been working as a data scientist at Dell Technologies since graduating from the Unviersity of Texas at Austin with a masters degree in Business Analytics."
   },
   {
     "objectID": "about.html#experience",
     "href": "about.html#experience",
-    "title": "Sam Worley",
+    "title": "About",
     "section": "Experience",
     "text": "Experience\nDell Technologies - Advisor, Data Science. (April 2024-Present)\nDell Technologies - Senior Analyst, Data Science. (July 2022 - April 2024)\nUniversity of Texas at Austin - M.S. Buisness Analytics (July 2021 - May 2022)"
   },
   {
     "objectID": "about.html#funish-facts",
     "href": "about.html#funish-facts",
-    "title": "Sam Worley",
+    "title": "About",
     "section": "Fun(ish) Facts",
-    "text": "Fun(ish) Facts\n\nIn a former life, I was a college track and field runner.\nNow, I prefer the weeknight, extra casual, sand volleyball league."
+    "text": "Fun(ish) Facts\n\nIn a former life, I was a collegiate track and field runner.\nNow, I prefer the weeknight, extra casual, sand volleyball league."
   },
   {
     "objectID": "posts.html",
     "href": "posts.html",
     "title": "Journal",
     "section": "",
-    "text": "Disclaimer: the word ‘blog’ may is a bit too ambitious for what this site is. The LLM I’m using listed ‘Journal’ as an alternative and I liked that better. Really all this is a place to record and show some of the neat things I’ve learned and done (likely more fitting the former). Please don’t get in the habit of expecting regular updates from this site.\n\n\n\n\n\n\n\n\n\n\n\nHello\n\n\n\n\n\n\n\n\n\nMay 24, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Disclaimer: the word ‘blog’ may is a bit too ambitious for what this site is. The LLM I’m using listed ‘Journal’ as an alternative and I liked that better. Really all this is a place to record and show some of the neat things I’ve learned and done (more likey the former). Please don’t get in the habit of expecting regular updates from this site.\n\n\n\n\n\n\n\n\n\n\n\nDebug Step for Data Pipelines\n\n\nSmall function to make debugging long pipelines easier\n\n\n\n\n\n\nJul 30, 2025\n\n\n\n\n\n\n\n\n\n\n\nHello\n\n\n\n\n\n\n\n\n\nMay 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
