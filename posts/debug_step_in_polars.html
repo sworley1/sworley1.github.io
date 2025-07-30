@@ -194,7 +194,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </header>
 
 <p>In my work I often am writing long pipelines to process polars dataframes. Sometimes, there’s a bug and I’m not sure where its happening or have an easy way to to find it.</p>
-<p>Oftentimes, what I would do is break the pipeline and put an IPython <code>embed()</code> statement. Using embed is really nice because it gives you an interactive shell in the middle of your program which you can use to see what the status is of the dataframe and play around with it. You can filter to chec if certain rows or conditions exist, and look out for your edge cases. The downside has been that I would have to break something I want to test to call the <code>embed()</code> function. Here’s an example shown below:</p>
+<p>Oftentimes, I would break the pipeline and put in an IPython <code>embed()</code> statement. Using embed is really nice because it gives you an interactive shell in the middle of your program which you can use to see what your dataframe is looking like and play around with it. You can filter to check if certain rows or conditions exist, and look out for your edge cases. The downside has been that I would have to break up my pipeline if I want to use the <code>embed()</code> function. Here’s an example:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> polars <span class="im">as</span> pl</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython <span class="im">import</span> embed</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -225,7 +225,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"&gt;&gt;EMBED after complete process"</span>)</span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>embed()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>I stumbled upon <a href="https://koaning.io/posts/a-show-method-for-polars/">this</a> post by Vincent Warmerdam implementing a show method for polars and inspired me to try implementing something similar using <code>embed()</code></p>
+<p>I stumbled upon <a href="https://koaning.io/posts/a-show-method-for-polars/">this</a> post by Vincent Warmerdam implementing a show method for polars and inspired me to try implementing something similar for <code>embed()</code></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> polars <span class="im">as</span> pl</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython <span class="im">import</span> embed</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -258,7 +258,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    .pipe( debug_step , noteStr<span class="op">=</span><span class="st">"&gt;&gt;EMBED column creation"</span>)</span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This has been a nice trick where I can plug the <code>debug_step</code> function into my normal pipeline, run my script, and do some interactive debugging in the terminal. I find its also easy to turn off or on by uncommenting or commenting the debug step line in the pipeline which is nice.</p>
+<p>This has been a nice trick where I can plug the <code>debug_step</code> function into my normal pipeline, run my script, and do some interactive debugging in the terminal. I find its also easy to turn off or on using comments before the debug step.</p>
 
 
 
