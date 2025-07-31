@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-07-30">
-<meta name="description" content="Small function to make debugging long pipelines easier">
+<meta name="description" content="Small function to make debugging long polars pipelines easier">
 
-<title>Debug Step for Data Pipelines</title>
+<title>Debug Step for Polars Pipelines</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -167,12 +167,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Debug Step for Data Pipelines</h1>
+<h1 class="title">Debug Step for Polars Pipelines</h1>
 </div>
 
 <div>
   <div class="description">
-    Small function to make debugging long pipelines easier
+    Small function to make debugging long polars pipelines easier
   </div>
 </div>
 
@@ -225,7 +225,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"&gt;&gt;EMBED after complete process"</span>)</span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>embed()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>I stumbled upon <a href="https://koaning.io/posts/a-show-method-for-polars/">this</a> post by Vincent Warmerdam implementing a show method for polars and inspired me to try implementing something similar for <code>embed()</code></p>
+<p>I stumbled upon <a href="https://koaning.io/posts/a-show-method-for-polars/">this</a> post by Vincent Warmerdam implementing a show method for polars and inspired me to swith the print statement out for <code>embed()</code>.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> polars <span class="im">as</span> pl</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython <span class="im">import</span> embed</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
