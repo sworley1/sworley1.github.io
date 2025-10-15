@@ -32,14 +32,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This is the bio I typically use for work events:\n\nSam is a data scienctist who has worked as a jack-of-all trades when it comes to data. From creating data engineering pipelines and ML models, to building beautiful charts and tables, Sam helps deliver insights or automation with everything he does. Sam has been working as a data scientist at Dell Technologies since graduating from the Unviersity of Texas at Austin with a masters degree in Business Analytics."
+    "text": "This is the bio I typically use for work events:\n\nSam is a data scientist who has worked as a jack-of-all trades when it comes to data. From creating data engineering pipelines and ML models, to building beautiful charts and tables, Sam helps deliver insights or automation with everything he does. Sam has been working as a data scientist at Dell Technologies since graduating from the University of Texas at Austin with a masters degree in Business Analytics."
   },
   {
     "objectID": "about.html#experience",
     "href": "about.html#experience",
     "title": "About",
     "section": "Experience",
-    "text": "Experience\nDell Technologies - Advisor, Data Science. (April 2024-Present)\nDell Technologies - Senior Analyst, Data Science. (July 2022 - April 2024)\nUniversity of Texas at Austin - M.S. Buisness Analytics (July 2021 - May 2022)"
+    "text": "Experience\nWith some highlights listed\nDell Technologies - Data Science Advisor, Market Intelligence. (April 2024-Present)\n\nForecasted accelerated server market with better accuracy than leading research firm.\nConsulted for strategy team and developed an algorithm for identifying attrition in customers. Compiled findings from algorithm into a story for leadership to understand trends within the storage portfolio.\n\nDell Technologies - Data Science Senior Analyst, Market Intelligence. (July 2022 - April 2024)\n\nDeveloped data pipelines leveraging SQL, Pandas, and Polars to automate reporting of market data.\nCreated a Streamlit app to help demand planners conduct correlation studies in an app like experience.\n\nUniversity of Texas at Austin - M.S. Buisness Analytics (July 2021 - May 2022)"
   },
   {
     "objectID": "about.html#funish-facts",
